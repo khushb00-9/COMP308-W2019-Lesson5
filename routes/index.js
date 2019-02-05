@@ -14,8 +14,8 @@ router.get("/contact", function(req, res, next) {
   res.render("index", { title: "Contact" });
 });
 
-router.get("/products", function(req, res, next) {
-  res.render("index", { title: "Products" });
+router.get("/favorites", function(req, res, next) {
+  res.render("index", { title: "Favorites" });
 });
 
 router.get("/services", function(req, res, next) {
