@@ -11,7 +11,7 @@ router.get("/", (req, res, next) => {
     if (err) {
       return console.error(err);
     } else {
-      console.log(contactList);
+      // console.log(contactList);
 
       res.render("contacts/index", {
         title: "Contact List",
@@ -21,4 +21,28 @@ router.get("/", (req, res, next) => {
   });
 });
 
+// GET the Add page for the Contact-List
+router.get("/add", (req, res, next) => {
+  res.render("contacts/add", {
+    title: "Add a new Contact"
+  });
+});
+
+// POST-process the Add page for the Contact-List
+router.post("/add", (req, res, next) => {
+  let newContact = contact({
+    firstName: req.body.FirstNameTextField,
+    lastName: req.body.LastNameTextField,
+    age: req.body.AgeTextField
+  });
+  contact.create(newContact, (err, contact) => {
+    if (err) {
+      console.log(err);
+      res.end(err);
+    } else {
+      //takes the user back to the contact-list
+      res.redirect("/contact-list");
+    }
+  });
+});
 module.exports = router;

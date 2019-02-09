@@ -12,4 +12,4 @@ let contactSchema = mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("demo", contactSchema);
+module.exports = mongoose.model("contact", contactSchema);

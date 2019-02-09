@@ -1,5 +1,5 @@
 {
-  "name": "week-4",
+  "name": "week-5",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -18,7 +18,7 @@
     "morgan": "~1.9.0",
     "popper.js": "^1.14.6"
   },
-  "description": "MongoDB Demo",
+  "description": "Authentication",
   "main": "server.js",
   "author": "Khushboo Sakervala",
   "license": "ISC",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/khushb00-9/COMP308-W2019-Lesson4.git"
+    "url": "git+https://github.com/khushb00-9/COMP308-W2019-Lesson5.git"
   },
   "bugs": {
     "url": "https://github.com/khushb00-9/COMP308-W2019-Lesson4/issues"
